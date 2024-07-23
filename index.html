@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+    <style></style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clon de Google</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
+        </div>
+        <form action="https://www.google.com/search" method="get">
+            <input type="text" name="q" class="search-box" placeholder="Buscar en Google...">
+            <div class="buttons">
+                <input type="submit" class="btn" value="Buscar con Google">
+                <input type="submit" class="btn" value="Voy a tener suerte">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+</body>{
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+</body> 
+.container {
+    text-align: center;
+}
+
+.logo img {
+    width: 272px;
+    height: 92px;
+}
+
+.search-box {
+    width: 60%;
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 20px;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    outline: none;
+    box-shadow: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.search-box:focus {
+    border-color: #4285f4;
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #4285f4;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #3367d6;
+}
